@@ -4,10 +4,8 @@ import java.util.Scanner;
 
 public class EVA3_3_Captura {
     public static void main(String[] args) {
-        System.out.println("Introduce tu edad");
-        int edad = capturarInt(0);
-        System.out.println("Introduce tu Salario");
-        double salario = capturardouble(0);
+        int edad = capturarInt("Introduce tu edad");
+        double salario = capturardouble("Introduce tu Salario");
         String nombre = capturarTexto("Introduce tu nombre");
         String apellido = capturarTexto("Introduce tu apellido");
         System.out.println("Nombre: "+ nombre);
@@ -22,14 +20,14 @@ public class EVA3_3_Captura {
         texto = cap.nextLine();
         return texto;
     }
-    public static int capturarInt(int num){
+    public static int capturarInt(String num){
         Scanner cap = new Scanner(System.in);
         int texto;
         System.out.println(num);
         texto = cap.nextInt();
         return texto;
     }
-    public static double capturardouble(double num){
+    public static double capturardouble(String num){
         Scanner cap = new Scanner(System.in);
         double texto;
         System.out.println(num);
