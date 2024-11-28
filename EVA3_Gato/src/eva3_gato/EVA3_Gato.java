@@ -99,6 +99,7 @@ public class EVA3_Gato {
                 do{
                     jugada=generarJugada();
                     checarJugada2 = jugadaValidaMaquina(jugada);
+                    checarVictoria = victoriaDerrota();
                 }while(checarJugada2==2&&checarVictoria==4);
             switch (jugada){
                 case 100:
